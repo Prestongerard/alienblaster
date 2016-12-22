@@ -1,0 +1,297 @@
+.wrapper {
+     background-color: black;
+     top: 50px;
+     bottom: 50px;
+     height: 80%;
+     width: 50%;
+     left: 25%;
+     position: absolute;
+     margin: 50px auto 0 auto;
+     font-family: 'Press Start 2P', cursive;
+}
+
+/* top nav bar */
+
+.top-nav {
+     position: relative;
+     height: 50px;
+     width: 100%;
+     background-color: #446A8B;
+}
+
+/* top left nav */
+
+.hamburger {
+     background-image: url('img/hamburger.png');
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     width: 50px;
+     height: 50px;
+     cursor: pointer;
+}
+
+.play-icon, .restart-icon {
+     position: absolute;
+     width: 50px;
+     height: 50px;
+     cursor: pointer;
+}
+
+.play-icon {
+     display:table;
+     margin: 7 auto;
+     left: 50px;
+     font-size: 31px;
+}
+
+.restart-icon {
+     display:table;
+     margin:0 auto;
+     font-size: 37px;
+     left: 85px;
+}
+
+/* Centered title */
+
+.title {
+     color: black;
+     display:table;
+     margin:0 auto;
+     font-size: 26px;
+     padding-top: 15px;
+}
+/*instrument icons */
+
+.piano, .sample, .guitar, .bass, .drums, .synth {
+     position: absolute;
+     background-repeat: no-repeat;
+     height: 30px;
+     width: 30px;
+     top: 15px;
+}
+.piano {
+     background-image: url('img/piano.png');
+     right: 3px;
+
+}
+
+.sample {
+     background-image: url('img/sample.png');
+     right: 37px;
+}
+
+.guitar {
+     background-image: url('img/guitar.png');
+     right: 71px;
+}
+
+.bass {
+     background-image: url('img/bass.png');
+     right: 99px;
+}
+
+.drums {
+     background-image: url('img/drums.png');
+     right: 128px;
+}
+
+.synth{
+     background-image: url('img/synth.png');
+     right: 162px;
+}
+
+/* Pop up menu */
+
+.start-menu {
+    position: absolute;
+    z-index: 1;
+    left: 225px;
+    top: 75px;
+    width: 500px;
+    height: 500px;
+    overflow: auto;
+    background-color: #A9A9A9;
+    border: 5px solid grey;
+}
+
+.close {
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 40px;
+     width: 40px;
+     cursor: pointer;
+     text-align: center;
+     color: black;
+     font-size: 25px;
+}
+
+h1 {
+     color: black;
+     text-align: center;
+}
+
+/* pop-up menu buttons */
+
+.rules-button, .highscores-button {
+     background-color: #446A8B;
+     color: black;
+     line-height: 50px;
+     height: 50px;
+     width: 250px;
+     text-align: center;
+     float: left;
+     border-top: 3px solid grey; */
+}
+
+.highscores-button {
+     position: absolute;;
+     right: 0px;
+     border-left: 5px solid grey;
+}
+
+.rules-content {
+     margin: 0 auto;
+     width: 500px;
+     float: left;
+     background-color: black;
+     height: 365px;
+     font-size: 20px;
+     border-top: 5px solid grey;
+     color: green;
+}
+
+.highscores-content {
+     margin: 0 auto;
+     width: 500px;
+     float: left;
+     background-color: black;
+     height: 365px;
+     font-size: 20px;
+     border-top: 5px solid grey;
+     color: green;
+}
+
+/* game board */
+
+.board-container {
+     position: relative;
+     top: 0px;
+     width: 100%;
+     height: 555px;
+     overflow: hidden;
+}
+
+/* animations  for targets */
+
+.alien-flip {
+     background-image: url('img/alienflip.gif');
+     background-repeat: no-repeat;
+     position: relative;
+     top: 300px;
+     left: -200px;
+     width: 300px;
+     height: 300px;
+     overflow: hidden;
+}
+
+.alien-love {
+     background-image: url('img/alienlove.gif');
+     background-repeat: no-repeat;
+     position: absolute;
+     top: 300px;
+     left: -200px;
+     width: 300px;
+     height: 300px;
+}
+
+.explosion {
+     background-image: url('img/explosion.gif');
+     background-repeat: no-repeat;
+     position: relative;
+     width: 100px;
+     height: 80px;
+     display: none;
+}
+/* flashing stars */
+
+.star-1, .star-2, .star-3, .star-4, .star-5, .star-6, .star-7, .star-8 {
+     position: absolute;
+}
+
+.star-1 {
+     color: purple;
+     top: 200px;
+     left: 25px;
+}
+
+.star-2 {
+     color: #ffb9b3;
+     top: 400px;
+     left: 125px;
+}
+
+.star-3 {
+     color: yellow;
+     top: 150px;
+     left: 300px;
+}
+.star-4 {
+     color: cyan;
+     top: 450px;
+     left: 425px;
+}
+.star-5 {
+     color: blue;
+     top: 200px;
+     left: 525px;
+}
+.star-6 {
+     color: orange;
+     top: 400px;
+     left: 700px;
+}
+.star-7 {
+     color: red;
+     top: 150px;
+     left: 800px;
+}
+.star-8 {
+     color: green;
+     top: 200px;
+     left: 325px;
+}
+
+/* control room- bottom screen */
+
+.dashboard {
+     background-image: url('img/mathblastercrop.jpg');
+     background-repeat: no-repeat;
+     height: 325px;
+     width: 100%;
+     position: relative;
+     border-top: 2px black solid;
+}
+
+.scoreboard {
+     background-color: #A9A9A9;
+     border: 5px solid #446A8B;
+     position: absolute;
+     height: 55px;
+     width: 760px;
+     top: 7px;
+     left: 70px;
+}
+
+.level, .points{
+     position: absolute;
+     height: 55px;
+     width: 100px;
+     background-color: black;
+     border: 2px solid none;
+}
+
+.points {
+     right: 0px;
+}
