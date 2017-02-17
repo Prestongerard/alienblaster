@@ -1,22 +1,5 @@
 $(document).ready(function() {
-     //$(".background").css('cursor','url(img/crosshairs.png),auto'); 
-     
-//start game
-     $(".play-icon").click(function(){
-          alienFlip();
-     });
-// animations for targets
-     function alienFlip(){
-     var x= Math.random() * 555;
-     $('alien-flip').fadeIn();
-     $('.alien-flip').css({"left": "0px", "top": x});
-     $('.alien-flip').animate({left: '1000px'}, 10000, alienFlip);}
-//target click
-     $('.alien-flip').click(function(){
-     console.log("clicked");
-     $('.alien-flip').stop().fadeOut();
-     });
-
+//$(".background").css('cursor','url(img/crosshairs.png),auto'); 
 
 // top nav-bar and start menu
      $(".hamburger").click(function(){
